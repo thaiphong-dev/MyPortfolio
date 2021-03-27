@@ -1,0 +1,78 @@
+.Introduction {
+    display: flex;
+    position: relative;
+
+    margin-top: 5rem;
+
+    &__img {
+        padding-top: 1rem;
+        position: relative;
+
+        &--imageMain {
+            position: relative;
+            top: 4rem;
+            right: 10rem;
+        }
+        &--image {
+            $Img_size: 4rem;
+            width: $Img_size;
+            height: $Img_size;
+        }
+    }
+    &__content {
+        padding-top: 4rem;
+        &--para {
+            // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 1.7rem;
+            // color: aqua;
+            font-weight: 400;
+            line-height: 3rem;
+            text-transform: inherit;
+        }
+    }
+}
+.Introduction ul {
+    list-style: none;
+    display: flex;
+    // flex-direction: column;
+    position: relative;
+}
+.Introduction ul li {
+    position: relative;
+    width: 100%;
+}
+.html {
+    position: relative;
+    left: -1.2rem;
+    top: 10rem;
+    transition: all 0.55s ease-in-out 0.1s;
+
+    // left: 0.5rem;
+}
+.scss {
+    position: relative;
+    top: -2rem;
+    left: 8rem;
+    transition: all 0.55s ease-in-out 0.2s;
+}
+.react {
+    position: relative;
+    top: 0;
+    left: 25rem;
+    transition: all 0.55s ease-in-out 0.3s;
+}
+.redux {
+    position: relative;
+    top: 9rem;
+    left: 30rem;
+    transition: all 0.55s ease-in-out 0.4s;
+}
+
+.displayEvent {
+    position: relative;
+    top: 15rem;
+    left: 20rem;
+
+    transition: all 0.85s ease-in-out 0s;
+}
+//----------------------------------------------------

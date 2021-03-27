@@ -1,0 +1,41 @@
+.Navigation {
+    position: relative;
+    padding-top: 0.5rem;
+
+    color: rgb(59, 187, 187);
+    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    &__name {
+        font-weight: 400;
+        cursor: pointer;
+        // // // text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(109, 240, 218, 0.2);
+        // &:hover {
+        //     text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(109, 240, 218, 0.2);
+        // }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+
+        list-style: none;
+        text-align: center;
+        text-transform: capitalize;
+
+        &--title {
+            padding-right: 2.5rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            &:hover {
+                color: rgb(25, 221, 221);
+            }
+            // cursor: pointer;
+        }
+        // &--link {
+        //     text-decoration: none;
+        //     color: rgb(59, 187, 187);
+        // }
+    }
+}

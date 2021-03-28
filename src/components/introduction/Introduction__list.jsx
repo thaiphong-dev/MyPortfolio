@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-Event.propTypes = {
+Introduction__list.propTypes = {
     onImgMouseEnter: PropTypes.func,
     onImgMouseLeave: PropTypes.func,
     sources: PropTypes.array,
 };
-Event.defaultProps = {
+Introduction__list.defaultProps = {
     onImgMouseEnter: null,
     onImgMouseLeave: null,
     sources: [],
 }
 
-function Event(props) {
+function Introduction__list(props) {
     const { onImgMouseEnter, sources, onImgMouseLeave } = props;
 
     function handleMouseEnter(source) {
@@ -30,13 +30,7 @@ function Event(props) {
     return (
         <ul className='Introduction__list'>
             {sources.map((source) => (
-                //     if (source.id !== 5) {
-                //     <li className='Introduction__list--item' key={source.id}>
-                //         <img className={source.class} src={source.title} alt='anh' />
 
-                //     </li>
-                // }
-                //     else {
                 <li className='Introduction__list--item' key={source.id}>
                     <img onMouseEnter={() => handleMouseEnter(source)} onMouseLeave={() => handleMouseLeave(source)} id={`id${source.id}`} className={source.class} src={source.title} alt='anh' />
 
@@ -48,4 +42,4 @@ function Event(props) {
     );
 }
 
-export default Event;
+export default Introduction__list;

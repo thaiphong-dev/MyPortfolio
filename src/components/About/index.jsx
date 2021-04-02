@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Introduction from './Features/Introduction/index'
+import Introduction from './Features/IntroductionMySelf/index'
 import Skill from './Features/Skill';
 import Certificate from './Features/Certificates';
 import Hobbies from './Features/Hobbies';
 import DemoProject from './Features/DemoProject';
+import './index.scss'
 
 About.propTypes = {
 
@@ -12,7 +13,7 @@ About.propTypes = {
 
 function About(props) {
     return (
-        <div>
+        <div className='About'>
             <Introduction />
             <Skill />
             <Certificate />

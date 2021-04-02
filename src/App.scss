@@ -1,10 +1,9 @@
-.App{
+.App {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  padding: 0 6rem;
 
+  padding: 0 6rem;
 }
 
 .Navigation {
@@ -17,30 +16,30 @@
 
   display: flex;
   justify-content: space-between;
-      &__name {
+  &__name {
     font-weight: 400;
     cursor: pointer;
-    }
-&__list {
-  display: flex;
-  justify-content: space-around;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
 
-  list-style: none;
-  text-align: center;
-  text-transform: capitalize;
+    list-style: none;
+    text-align: center;
+    text-transform: capitalize;
 
-  &--title {
+    &--title {
       padding-right: 2.5rem;
     }
-  &--link {
-        display: block;
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: rgb(41, 150, 114);
+    &--link {
+      display: block;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: rgb(41, 150, 114);
 
-        &:hover {
-          color: rgb(25, 221, 221);
+      &:hover {
+        color: rgb(25, 221, 221);
       }
+    }
   }
-}
 }

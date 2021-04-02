@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './Instronduction.scss'
-import anh_1 from './img/ptsanh.jpg'
-import anh_2 from './img/Untitled-1.jpg'
-import anh_3 from './img/download.png'
-import anh_4 from './img/aaa.png'
-import anh_5 from './img/logo.png'
-import Introduction__content from './Introduction__content';
-import Introduction__list from './Introduction__list';
+import anh_1 from './image/ptsanh.jpg'
+import anh_2 from './image/Untitled-1.jpg'
+import anh_3 from './image/download.png'
+import anh_4 from './image/aaa.png'
+import anh_5 from './image/logo.png'
+import Introduction__content from './components/introduction_content/Introduction__content';
+import Introduction__list from './components/introduction_list/Introduction__list';
 
 Introduction.propTypes = {
 

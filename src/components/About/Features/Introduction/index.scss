@@ -1,0 +1,30 @@
+.Introduction {
+    display: flex;
+    // justify-content: space-between;
+    // text-align: center;
+    flex-direction: column;
+
+    margin-top: 0;
+    width: 15rem;
+    // padding: 0;
+    &__img {
+        // display: block;
+        $img_size: 15rem;
+        width: $img_size;
+        height: $img_size;
+
+        border-radius: 50%;
+    }
+    &__paragraph {
+        text-align: center;
+        width: 15rem;
+        padding-top: 0.5rem;
+        // padding-right: 5rem;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+
+        color: rgb(41, 150, 114);
+        font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+        font-weight: 100;
+    }
+}

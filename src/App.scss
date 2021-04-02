@@ -1,0 +1,46 @@
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  padding: 0 6rem;
+
+}
+
+.Navigation {
+  position: relative;
+  padding-top: 0.5rem;
+
+  color: rgb(41, 150, 114);
+
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+      &__name {
+    font-weight: 400;
+    cursor: pointer;
+    }
+&__list {
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+  text-align: center;
+  text-transform: capitalize;
+
+  &--title {
+      padding-right: 2.5rem;
+    }
+  &--link {
+        display: block;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(41, 150, 114);
+
+        &:hover {
+          color: rgb(25, 221, 221);
+      }
+  }
+}
+}

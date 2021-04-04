@@ -7,29 +7,29 @@ Skill.propTypes = {
 
 function Skill(props) {
     return (
-        <div>
-            <div className="title">Kĩ năng làm việc</div>
-            <div className="skills">
-                <p>HTML</p>
-                <div className="skill">
-                    <div className="skill__html">80%</div>
+        <div className='skill'>
+            <div className="skill__title">Kĩ năng làm việc</div>
+            <div className="skill__block">
+                <div className="skill__block--program">
+                    <h2>Kĩ năng lập trình</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS(SCSS)</li>
+                        <li>JavaScript</li>
+                        <li>ReactJs</li>
+                    </ul>
                 </div>
-                <p>SCSS</p>
-                <div className="skill">
-                    <div className="skill__scss">80%</div>
-                </div>
-                <p>JAVASCRIPT</p>
-                <div className="skill">
-
-                    <div className="skill__js">65%</div>
-                </div>
-                <p>REACTJS</p>
-                <div className="skill">
-                    <div className="skill__reactJS">68%</div>
+                <div className="skill__block--nother">
+                    <h2>Kĩ năng Khác</h2>
+                    <ul><li>Adobe Photoshop</li>
+                        <li>English</li></ul>
                 </div>
             </div>
 
-        </div>
+
+
+        </div >
     );
 }
 

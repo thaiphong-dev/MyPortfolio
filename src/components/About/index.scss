@@ -1,4 +1,23 @@
 .About {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 4rem;
+    // justify-content: center;
+    &__introE {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    &__knowE {
+        padding-left: 1.5rem;
+    }
+    &__projectE {
+        // padding-left: 1.5rem;
+    }
+    &__skillE {
+        padding-left: 1.5rem;
+    }
+    &__hobbiesE {
+        padding-left: 1.5rem;
+    }
 }

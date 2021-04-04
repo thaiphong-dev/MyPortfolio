@@ -1,0 +1,21 @@
+.hobbies {
+    &__title {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__title::after {
+        content: "";
+        display: block;
+        width: 6.5rem;
+        border: 0.2rem solid rgb(104, 6, 6);
+    }
+    &__list {
+        & > li {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: 200;
+        }
+    }
+}

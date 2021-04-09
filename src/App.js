@@ -24,11 +24,6 @@ const listElements =
   { id: 3, title: 'Portfolio', link: '#' },
   { id: 4, title: 'Contact', link: '#' },];
 
-// function handleClick() {
-//   // eslint-disable-next-line no-restricted-globals
-//   location.reload();
-
-// }
 
 
 function App() {

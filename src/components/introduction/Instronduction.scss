@@ -1,73 +1,52 @@
 .Introduction {
-    display: flex;
     position: relative;
+    color: rgb(104, 6, 6);
+
     margin-top: 5rem;
-
-    &__img {
-        padding-top: 1rem;
-        position: relative;
-        &--imageMain {
-            position: relative;
-            top: 4rem;
-            right: 10rem;
-        }
-        &--image {
-            $Img_size: 4rem;
-            width: $Img_size;
-            height: $Img_size;
-        }
-    }
-    &__content {
-        padding-top: 4rem;
-        &--para {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 1.7rem;
-            font-weight: 400;
-            line-height: 3rem;
-            color: rgb(104, 6, 6);
-            text-transform: inherit;
-        }
-    }
-}
-.Introduction ul {
-    list-style: none;
     display: flex;
-    position: relative;
-}
-.Introduction ul li {
-    position: relative;
-    width: 100%;
-}
-.html {
-    position: relative;
-    left: -1.2rem;
-    top: 10rem;
-    transition: all 0.55s ease-in-out 0.1s;
-}
-.scss {
-    position: relative;
-    top: -2rem;
-    left: 8rem;
-    transition: all 0.55s ease-in-out 0.2s;
-}
-.react {
-    position: relative;
-    top: 0;
-    left: 25rem;
-    transition: all 0.55s ease-in-out 0.3s;
-}
-.redux {
-    position: relative;
-    top: 9rem;
-    left: 30rem;
-    transition: all 0.55s ease-in-out 0.4s;
-}
+    flex-direction: column;
+    text-align: center;
 
-.displayEvent {
-    position: relative;
-    top: 15rem;
-    left: 20rem;
-
-    transition: all 0.85s ease-in-out 0s;
+    &__information {
+        &--img {
+            width: auto;
+            // padding-bottom: 1rem;
+            & > img {
+                width: 25%;
+                border-radius: 50%;
+                justify-content: center;
+            }
+        }
+        &--skill {
+            letter-spacing: 1ps;
+            font-size: 1.2rem;
+        }
+        &--title {
+            font-size: 3rem;
+        }
+        &--btn {
+            position: relative;
+            margin: 0 auto;
+            // background-color: rgb(238, 25, 25);
+            // text-align: center;
+            height: 3rem;
+            width: 11rem;
+            border-radius: 1rem;
+            // justify-content: center;
+            display: flex;
+            justify-content: space-around;
+            & > p {
+                display: block;
+                width: 5rem;
+                display: inline;
+            }
+            & > svg {
+                display: block;
+                width: 2rem;
+                height: 2.5rem;
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+    }
 }
-//----------------------------------------------------

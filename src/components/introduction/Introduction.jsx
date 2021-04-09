@@ -1,13 +1,8 @@
+//HTML5, CSS(SCSS), Javascript, React hook, React router, React redux
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './Instronduction.scss'
-import anh_1 from './image/ptsanh.jpg'
-import anh_2 from './image/Untitled-1.jpg'
-import anh_3 from './image/download.png'
-import anh_4 from './image/aaa.png'
-import anh_5 from './image/logo.png'
-import Introduction__content from './components/introduction_content/Introduction__content';
-import Introduction__list from './components/introduction_list/Introduction__list';
+import ava from './images/ava3.jpg'
 
 Introduction.propTypes = {
 
@@ -16,63 +11,47 @@ Introduction.propTypes = {
 function Introduction(props) {
 
 
-    const initlocation =
-        [{ id: 1, title: `${anh_2}`, class: 'Introduction__img--image html displayEvent', action: null },
-        { id: 2, title: `${anh_3}`, class: 'Introduction__img--image scss displayEvent ', action: null },
-        { id: 3, title: `${anh_4}`, class: 'Introduction__img--image react displayEvent', action: null },
-        { id: 4, title: `${anh_5}`, class: 'Introduction__img--image redux displayEvent', action: null },
-        { id: 5, title: `${anh_1}`, class: 'Introduction__img--imageMain' }
-        ]
-    const [source, setSource] = useState(initlocation);
-    const [conten, setContent] = useState('');
-
-    const handleMouseEnter = () => {
-        const newSource = [...source];
-        for (let i = 0; i < newSource.length - 1; i++) {
-
-            const a = newSource[i].class;
-            let k = a.split(' ');
-            const newClass = k[0] + ' ' + k[1];
-            newSource[i].class = newClass;
-
-        }
-        setSource(newSource);
-    }
 
 
-    const handleMouseLeave = () => {
-        const newSource = [...source];
-        for (let i = 0; i < newSource.length - 1; i++) {
-            newSource[i].class += (' ' + 'displayEvent');
-            console.log('day la class moi: ', newSource[i]);
+    // const handleMouseEnter = () => {
+    //     const newSource = [...source];
+    //     for (let i = 0; i < newSource.length - 1; i++) {
 
-        }
-        setSource(newSource);
-    }
-    useEffect(() => {
-        function textSpeed() {
-            var a = "Hi, I'm Phong, I'm front-end web developer, I have skills on HTML, SCSS, responsive, reactjs.";
+    //         const a = newSource[i].class;
+    //         let k = a.split(' ');
+    //         const newClass = k[0] + ' ' + k[1];
+    //         newSource[i].class = newClass;
 
-            const text = document.querySelector('.Introduction__content--para');
-            text.innerHTML = '';
-
-            a = a.split('');
+    //     }
+    //     setSource(newSource);
+    // }
 
 
-            var i = 0;
-            const time = setInterval(() => {
-                text.innerHTML += a[i];
-                i++
-                if (i >= a.length) clearInterval(time);
-            }, 70);
-            // return () => {
-            //     console.log('da return');
-            //     clearInterval(time);
-            // }
 
-        }
-        textSpeed();
-    }, []);
+    // useEffect(() => {
+    //     function textSpeed() {
+    //         var a = "Hi, I'm Phong, I'm front-end web developer, I have skills on HTML, SCSS, responsive, reactjs.";
+
+    //         const text = document.querySelector('.Introduction__content--para');
+    //         text.innerHTML = '';
+
+    //         a = a.split('');
+
+
+    //         var i = 0;
+    //         const time = setInterval(() => {
+    //             text.innerHTML += a[i];
+    //             i++
+    //             if (i >= a.length) clearInterval(time);
+    //         }, 70);
+    //         // return () => {
+    //         //     console.log('da return');
+    //         //     clearInterval(time);
+    //         // }
+
+    //     }
+    //     textSpeed();
+    // }, []);
 
 
 
@@ -81,7 +60,7 @@ function Introduction(props) {
     return (
         <div className='Introduction'>
 
-            <div className="Introduction__img">
+            {/* <div className="Introduction__img">
                 <Introduction__list sources={source}
                     onImgMouseEnter={handleMouseEnter}
                     onImgMouseLeave={handleMouseLeave} />
@@ -90,7 +69,19 @@ function Introduction(props) {
             <section className="Introduction__content">
                 <Introduction__content />
 
-            </section>
+            </section> */}
+            <div className="Introduction__information">
+                <div className="Introduction__information--img">
+                    <img src={ava} alt="avata" />
+                </div>
+                <h5 className="Introduction__information--skill">
+                    HI, I AM TU THAI PHONG
+                </h5>
+                <h1 className="Introduction__information--title">
+                    Front-end Developer
+                </h1>
+                <button className="Introduction__information--btn"><p>Explore work</p><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-right" class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-100 0 700 512"><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg></button>
+            </div>
 
 
         </div>

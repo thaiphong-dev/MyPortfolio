@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -56,9 +56,10 @@ function App() {
           <div className="Navigation__feature">
             <Switch>
               {/* <Redirect exact from="/MyPortfolio" to="/" /> */}
+              <Redirect exact from="/" to="/Home" />
 
 
-              <Route path="/"><Introduction /></Route>
+              <Route path="/Home"><Introduction /></Route>
               <Route path="/About"><About linkElements={linkElements} /></Route>
               <Route path="/Portfolio"><Portfolio projectList={projectList} /></Route>
               <Route path="/Contact"><Contact /></Route>

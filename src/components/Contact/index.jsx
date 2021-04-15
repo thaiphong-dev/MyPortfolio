@@ -48,7 +48,8 @@ function Contact(props) {
                         SEND
                 </button>
                     {/* <p>Thanks for your responding! I look forward to meeting with you.</p>; */}
-                    <p>Thanks for your responding! I will reply within 48 hours.</p>
+                    <p> Thank you for your consideration. I look forward to speaking with you about this opportunity.</p>
+                    {/* <p>Thanks for your responding! I will reply within 48 hours.</p> */}
                 </form>
             </div>
         )

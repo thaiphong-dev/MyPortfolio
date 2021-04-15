@@ -51,7 +51,7 @@ function Portfolio(props) {
 
             </div>
             <div className="Project__content invitation">
-                <h1>I am taking new projects. Waiting to hearing about new projects, so if you'd like to chat please get in touch.</h1>
+                <h1>I'm still working on many new projects. So if you're interested with my abilities, I can be reach anytime via this contact link under.</h1>
                 {/* <button>Contact now</button> */}
 
 

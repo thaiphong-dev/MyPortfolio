@@ -19,7 +19,7 @@ function Navigation(props) {
         <div>
             <div className='Navigation'>
 
-                <h2 className="Navigation__name"> Từ Thái Phong </h2>
+                <h2 className="Navigation__name"> Tu Thai Phong </h2>
 
                 <ul className='Navigation__list'>
 

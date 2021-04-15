@@ -23,6 +23,9 @@ function About(props) {
                 <h1>TU THAI PHONG</h1>
                 <p>I'm Front-end Developer in Ho Chi Minh City.
                     </p>
+                <p>
+                    I have expertise in HTML 5, CSS(SCSS), Javascript, React Hook, Router, Redux.
+                    </p>
                 <p>I have serious passion for UI effects,
                 animations and creating intuitive, dynamic user experiences.</p>
 

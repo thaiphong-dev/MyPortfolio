@@ -56,7 +56,7 @@ function App() {
           <div className="Navigation__feature">
             <Switch>
               {/* <Redirect exact from="/MyPortfolio" to="/" /> */}
-              <Redirect exact from="/" to="/Home" />
+              <Redirect exact from="/MyPortfolio/" to="/Home" />
 
 
               <Route path="/Home"><Introduction /></Route>

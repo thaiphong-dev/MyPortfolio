@@ -50,23 +50,23 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<div>...Loading</div>} >
-        <BrowserRouter>
-          <Navigation listElements={listElements} />
+        {/* <BrowserRouter> */}
+        <Navigation listElements={listElements} />
 
-          <div className="Navigation__feature">
-            <Switch>
-              {/* <Redirect exact from="/" to="/Home" /> */}
-
-
-              <Route path="/"><Introduction /></Route>
-              <Route path="/About"><About linkElements={linkElements} /></Route>
-              <Route path="/Portfolio"><Portfolio projectList={projectList} /></Route>
-              <Route path="/Contact"><Contact /></Route>
+        <div className="Navigation__feature">
+          <Switch>
+            <Redirect exact from="/MyPortfolio" to="/" />
 
 
-            </Switch>
-          </div>
-        </BrowserRouter>
+            <Route path="/"><Introduction /></Route>
+            <Route path="/About"><About linkElements={linkElements} /></Route>
+            <Route path="/Portfolio"><Portfolio projectList={projectList} /></Route>
+            <Route path="/Contact"><Contact /></Route>
+
+
+          </Switch>
+        </div>
+        {/* </BrowserRouter> */}
       </Suspense>
     </div>
   );

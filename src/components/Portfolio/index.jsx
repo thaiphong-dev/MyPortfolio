@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import ProjectRender from './components';
-import anh from '../../images/bg.jpg'
+// import anh from '../../images/bg.jpg'
 import './index.scss'
 import { Link } from 'react-router-dom';
 Portfolio.propTypes = {

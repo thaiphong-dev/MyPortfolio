@@ -1,3 +1,5 @@
+$colorText: rgb(104, 6, 6);
+$colorBtn: rgb(236, 116, 116);
 .contact {
     text-align: center;
     width: 50%;
@@ -6,9 +8,9 @@
     margin: 5rem auto;
     border: 1rem solid #6d6f71;
     h1 {
-        font-weight: lighter;
+        font-weight: 400;
         font-size: 3rem;
-        color: #6d6f71;
+        color: $colorText;
     }
     &__form {
         &--input {

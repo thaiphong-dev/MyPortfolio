@@ -56,7 +56,7 @@ function Contact(props) {
 
     return (
         <div className="contact">
-            <h1>Contact me</h1>
+            <h1>Contact now</h1>
             <form className='contact__form' onSubmit={handleSubmit}>
 
 

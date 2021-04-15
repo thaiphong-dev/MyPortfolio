@@ -1,67 +1,157 @@
+$colorText: rgb(104, 6, 6);
+$colorBtn: rgb(236, 116, 116);
 .layout {
     position: relative;
+    padding: 0.75rem;
     &__hidenlay {
-        display: none;
-        position: relative;
+        //display: none;
 
-        width: 25rem;
-        height: 17rem;
-        // border-radius: 5rem;
-        // background-color: deeppink;
+        width: 23.75rem;
+        height: 16rem;
+        // opacity: 0;
         z-index: 1;
         transition: all 0.4s ease-in-out 0s;
-        &:hover {
-            display: block;
-            background-color: red;
-            opacity: 0;
-            transition: all 0.4s ease-in-out 0s;
-        }
+
         & > h1 {
             position: absolute;
-            // text-align: center;
             top: 5rem;
             left: 3rem;
             color: aliceblue;
         }
         & > img {
-            width: 25rem;
-            height: 17rem;
-            border-radius: 1.5rem;
-            // height: 20rem;
+            width: 23.75rem;
+            height: 16rem;
+            border-radius: 1rem;
         }
     }
     &__overlay {
         position: absolute;
-        top: 0;
-        display: block;
-        width: 25rem;
-        height: 17rem;
+        top: 0.75rem;
 
-        border-radius: 1.5rem;
-        background-color: rgb(109, 25, 25);
-        // z-index: -1;
+        opacity: 0;
+
+        display: block;
+        width: 23.75rem;
+        height: 16rem;
+        border-radius: 1rem;
+        //background-color: rgb(109, 25, 25);
+        transition: all 0.4s ease-in-out 0s;
+
         text-align: center;
+        &:hover {
+            display: block;
+            opacity: 1;
+            transition: all 0.4s ease-in-out 0s;
+        }
         & > h2 {
+            padding-top: 3rem;
             color: azure;
         }
         &-link {
             display: block;
             margin: 0 auto;
             width: 10rem;
-            height: 3rem;
-            background-color: rgb(120, 70, 177);
+            height: 2.5rem;
+
+            // background-color: rgb(120, 70, 177);
             text-decoration: none;
             color: aliceblue;
-            border-radius: 1rem;
+            border: 0.15rem solid rgb(120, 70, 177);
+            border-radius: 5rem;
+            margin-top: 2rem;
+            transition: all 0.3s ease-in-out 0s;
+            &:hover {
+                display: block;
+                margin-top: 1.5rem;
+                transition: all 0.3s ease-in-out 0s;
+            }
             &--title {
+                padding-top: 0.5rem;
                 display: inline-block;
                 height: 1.5rem;
             }
 
-            &--icon > svg {
-                width: 2rem;
-                height: 1.5rem;
+            &--icon {
+                & > svg {
+                    width: 2rem;
+                    height: 0.6rem;
+                }
             }
         }
     }
+}
+.Project {
+    display: block;
+    width: 100%;
+    // text-align: center;
+
+    &__content {
+        text-align: center;
+        color: rgb(104, 6, 6);
+
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        & > h1 {
+            // text-align: center;
+            font-weight: 500;
+        }
+        & > p {
+            font-size: larger;
+        }
+        & > a {
+            text-decoration: none;
+            // margin-top: 4rem;
+        }
+        &--btn {
+            position: relative;
+            top: 1rem;
+            // margin-top: 5rem;
+            text-decoration: none;
+
+            margin: 0 auto;
+            // margin-bottom: 3rem;
+            background-color: $colorBtn;
+
+            height: 3rem;
+            width: 11rem;
+            border-radius: 1rem;
+            transition: all 0.3s ease-in-out 0s;
+
+            display: flex;
+            justify-content: space-around;
+            & > p {
+                display: block;
+                width: 5rem;
+                display: inline;
+                text-decoration: none;
+            }
+            & > svg {
+                display: block;
+                width: 2rem;
+                height: 2.5rem;
+                text-align: center;
+                font-weight: 300;
+            }
+            &:hover {
+                position: relative;
+                top: 0rem;
+                transition: all 0.4s;
+                cursor: pointer;
+            }
+        }
+    }
+    &__box {
+        text-align: center;
+        // width: 100%;
+        // display: grid;
+        // grid-template-columns: auto auto auto;
+        // grid-row-gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 3rem;
+    }
+}
+.invitation {
+    margin-top: 5rem;
 }

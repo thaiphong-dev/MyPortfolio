@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -50,13 +50,13 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<div>...Loading</div>} >
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Navigation listElements={listElements} />
 
           <div className="Navigation__feature">
             <Switch>
               {/* <Redirect exact from="/MyPortfolio" to="/" /> */}
-              <Redirect exact from="/MyPortfolio/" to="/Home" />
+              <Redirect exact from="/" to="/Home" />
 
 
               <Route path="/Home"><Introduction /></Route>
@@ -67,7 +67,7 @@ function App() {
 
             </Switch>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </Suspense>
     </div>
   );

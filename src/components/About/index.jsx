@@ -1,25 +1,49 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Introduction from './Features/IntroductionMySelf/index'
-import Skill from './Features/Skill';
-import Hobbies from './Features/Hobbies';
-import DemoProject from './Features/DemoProject';
+import avata from '../../images/ava2.jpg'
+import sign from '../../images/chuki2.jpg'
+
 import './index.scss'
-import Knowledge from './Features/Knowledge';
 
 About.propTypes = {
-
+    linkElements: PropTypes.array,
 };
+About.defaultProps = {
+    linkElements: null,
+}
 
 function About(props) {
+    const { linkElements } = props;
     return (
         <div className='About'>
-            <div className="About__introE"><Introduction /></div>
-            <div className="About__knowE"><Knowledge /></div>
-            <div className="About__projectE"><DemoProject /></div>
-            <div className="About__skillE"><Skill /></div>
+            <div className="About__img">
+                <img src={avata} alt="anh dai dien" />
+            </div>
+            <div className="About__content">
+                <h1>TU THAI PHONG</h1>
+                <p>I'm Front-end Developer in Ho Chi Minh City.
+                    </p>
+                <p>I have serious passion for UI effects,
+                animations and creating intuitive, dynamic user experiences.</p>
 
-            <div className="About__hobbiesE"><Hobbies /></div>
+
+                <img src={sign} alt="chu ki" />
+                <p >Tu Thai Phong</p>
+
+
+                <ul className="About__content-list">
+                    {linkElements.map(linkElement => (
+                        <li className="About__content-list--title"
+                            key={linkElement.id}>
+                            <a className="About__content-list--link"
+                                href={linkElement.link}>{linkElement.title}</a>
+
+                        </li>
+                    ))}
+                </ul>
+
+            </div>
+
         </div>
     );
 }

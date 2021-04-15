@@ -1,23 +1,69 @@
+$colorText: rgb(104, 6, 6);
+$colorBtn: rgb(236, 116, 116);
+
 .About {
-    display: grid;
-    grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 50% 50%;
-    grid-column-gap: 4rem;
-    // justify-content: center;
-    &__introE {
-        grid-row-start: 1;
-        grid-row-end: 3;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        // margin-right: 5rem;
+
+        & > img {
+            width: 28rem;
+        }
     }
-    &__knowE {
-        padding-left: 1.5rem;
-    }
-    &__projectE {
-        // padding-left: 1.5rem;
-    }
-    &__skillE {
-        padding-left: 1.5rem;
-    }
-    &__hobbiesE {
-        padding-left: 1.5rem;
+    &__content {
+        padding-left: 10rem;
+        $colorChange: white;
+        color: $colorText;
+        & > h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+        & > p {
+            line-height: 1.5;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        & > img {
+            margin-top: 2rem;
+            width: 35%;
+        }
+        &-list {
+            position: relative;
+            top: 7rem;
+
+            display: flex;
+            justify-content: space-around;
+
+            // padding-top: 0.5rem;
+            list-style: none;
+            text-align: center;
+            text-transform: capitalize;
+            padding-left: 0;
+
+            // &--title {
+            //     // padding-top: 5.5rem;
+            // }
+            &--link {
+                position: relative;
+                top: 0.5rem;
+
+                display: block;
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: rgb(104, 6, 6);
+                transition: all 0.4s ease-in-out 0s;
+                &:hover {
+                    color: rgb(238, 25, 25);
+                    position: relative;
+                    top: 0rem;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+            }
+        }
     }
 }

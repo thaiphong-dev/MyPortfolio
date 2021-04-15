@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './index.scss'
 import { useForm, ValidationError } from '@formspree/react';
 Contact.propTypes = {
@@ -47,9 +47,9 @@ function Contact(props) {
                     <button className='contact__form--button' type="submit" disabled={state.submitting}>
                         SEND
                 </button>
-                    <p>Thanks for your responding! I look forward to meeting with you.</p>;
-
-            </form>
+                    {/* <p>Thanks for your responding! I look forward to meeting with you.</p>; */}
+                    <p>Thanks for your responding! I will reply within 48 hours.</p>
+                </form>
             </div>
         )
     }

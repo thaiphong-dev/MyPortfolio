@@ -1,0 +1,39 @@
+.Navigation {
+    position: relative;
+    // padding-top: 0.5rem;
+
+    // color: rgb(41, 150, 114);
+
+    font-family: "Times New Roman", Times, serif;
+
+    display: flex;
+    justify-content: space-between;
+    &__name {
+        font-weight: 400;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: rgb(104, 6, 6);
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0.5rem;
+        list-style: none;
+        text-align: center;
+        text-transform: capitalize;
+        &--title {
+            padding-right: 2.5rem;
+        }
+        &--link {
+            display: block;
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: rgb(104, 6, 6);
+
+            &:hover {
+                color: rgb(238, 25, 25);
+            }
+        }
+    }
+}

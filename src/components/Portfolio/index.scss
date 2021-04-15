@@ -1,0 +1,67 @@
+.layout {
+    position: relative;
+    &__hidenlay {
+        display: none;
+        position: relative;
+
+        width: 25rem;
+        height: 17rem;
+        // border-radius: 5rem;
+        // background-color: deeppink;
+        z-index: 1;
+        transition: all 0.4s ease-in-out 0s;
+        &:hover {
+            display: block;
+            background-color: red;
+            opacity: 0;
+            transition: all 0.4s ease-in-out 0s;
+        }
+        & > h1 {
+            position: absolute;
+            // text-align: center;
+            top: 5rem;
+            left: 3rem;
+            color: aliceblue;
+        }
+        & > img {
+            width: 25rem;
+            height: 17rem;
+            border-radius: 1.5rem;
+            // height: 20rem;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 25rem;
+        height: 17rem;
+
+        border-radius: 1.5rem;
+        background-color: rgb(109, 25, 25);
+        // z-index: -1;
+        text-align: center;
+        & > h2 {
+            color: azure;
+        }
+        &-link {
+            display: block;
+            margin: 0 auto;
+            width: 10rem;
+            height: 3rem;
+            background-color: rgb(120, 70, 177);
+            text-decoration: none;
+            color: aliceblue;
+            border-radius: 1rem;
+            &--title {
+                display: inline-block;
+                height: 1.5rem;
+            }
+
+            &--icon > svg {
+                width: 2rem;
+                height: 1.5rem;
+            }
+        }
+    }
+}

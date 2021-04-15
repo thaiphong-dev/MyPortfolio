@@ -1,28 +1,28 @@
-
 import { Suspense } from 'react';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import './App.scss';
+import About from './components/About';
+import Contact from './components/Contact';
 import Introduction from './components/introduction/Introduction';
-
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-  Redirect,
-  BrowserRouter
-} from "react-router-dom";
-import About from '../src/components/About/index';
-import Portfolio from '../src/components/Portfolio/index';
-import Contact from '../src/components/Contact/index';
-
+import Navigation from './components/navigation';
+import Portfolio from './components/Portfolio';
+// import Introduction from '../introduction/Introduction';
+// import About from '../About';
+// import Portfolio from '../Portfolio';
+// import Contact from '../Contact';
 const listElements =
-  [{ id: 1, title: 'Home', link: '#' },
-  { id: 2, title: 'About', link: '#' },
-  { id: 3, title: 'Portfolio', link: '#' },
-  { id: 4, title: 'Contact', link: '#' },];
+  [{ id: 1, title: 'Home' },
+  { id: 2, title: 'About' },
+  { id: 3, title: 'Portfolio' },
+  { id: 4, title: 'Contact' },];
+
+
+const linkElements =
+  [{ id: 1, title: 'Facebook', link: 'https://www.facebook.com/phong.tuthai' },
+  { id: 2, title: 'Instagram', link: 'https://www.instagram.com/i_am__phong/' },
+  { id: 3, title: 'GitHub', link: 'https://github.com/thaiphong1101' },
+  { id: 4, title: 'Linkedin', link: 'https://www.linkedin.com/in/t%E1%BB%AB-phong-b2121a1ab/' },];
+
 
 
 
@@ -32,24 +32,7 @@ function App() {
     <div className="App">
       <Suspense fallback={<div>...Loading</div>} >
         <BrowserRouter>
-          <div className='Navigation'>
-
-            <h2 className="Navigation__name"> Từ Thái Phong </h2>
-
-            <ul className='Navigation__list'>
-
-              {listElements.map(ele => (
-                <li className='Navigation__list--title'
-                  key={ele.id}>
-                  <Link className='Navigation__list--link' to={`/${ele.title}`}>{ele.title}</Link>
-                </li>
-              ))}
-
-            </ul>
-
-
-          </div>
-
+          <Navigation listElements={listElements} />
 
           <div className="Navigation__feature">
             <Switch>
@@ -57,14 +40,13 @@ function App() {
 
 
               <Route path="/Home"><Introduction /></Route>
-              <Route path="/About"><About /></Route>
+              <Route path="/About"><About linkElements={linkElements} /></Route>
               <Route path="/Portfolio"><Portfolio /></Route>
               <Route path="/Contact"><Contact /></Route>
 
 
             </Switch>
           </div>
-
         </BrowserRouter>
       </Suspense>
     </div>

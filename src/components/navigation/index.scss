@@ -1,11 +1,7 @@
-// @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import "../../colors.scss";
+
 .Navigation {
     position: relative;
-    // padding-top: 0.5rem;
-
-    // color: rgb(41, 150, 114);
-
-    // font-family: "Courier New", Courier, monospace;
 
     display: flex;
     justify-content: space-between;
@@ -14,7 +10,7 @@
         cursor: pointer;
         font-weight: 400;
         font-size: 1.6rem;
-        color: rgb(104, 6, 6);
+        color: $colorText;
     }
     &__list {
         display: flex;
@@ -30,10 +26,10 @@
             display: block;
             text-decoration: none;
             font-size: 1.2rem;
-            color: rgb(104, 6, 6);
+            color: $colorText;
 
             &:hover {
-                color: rgb(238, 25, 25);
+                color: $ColorHL;
             }
         }
     }

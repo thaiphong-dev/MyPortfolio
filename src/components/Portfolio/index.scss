@@ -1,5 +1,5 @@
-$colorText: rgb(104, 6, 6);
-$colorBtn: rgb(236, 116, 116);
+@import "../../colors.scss";
+
 .layout {
     position: relative;
     padding: 0.75rem;
@@ -34,7 +34,6 @@ $colorBtn: rgb(236, 116, 116);
         width: 23.75rem;
         height: 16rem;
         border-radius: 1rem;
-        //background-color: rgb(109, 25, 25);
         transition: all 0.4s ease-in-out 0s;
 
         text-align: center;
@@ -53,10 +52,9 @@ $colorBtn: rgb(236, 116, 116);
             width: 10rem;
             height: 2.5rem;
 
-            // background-color: rgb(120, 70, 177);
             text-decoration: none;
             color: aliceblue;
-            border: 0.15rem solid rgb(120, 70, 177);
+            border: 0.15rem solid $ColorBoder;
             border-radius: 5rem;
             margin-top: 2rem;
             transition: all 0.3s ease-in-out 0s;
@@ -80,20 +78,19 @@ $colorBtn: rgb(236, 116, 116);
         }
     }
 }
+
 .Project {
     display: block;
     width: 100%;
-    // text-align: center;
 
     &__content {
         text-align: center;
-        color: rgb(104, 6, 6);
+        color: $colorText;
 
         width: 70%;
         margin: 0 auto;
         margin-bottom: 2rem;
         & > h1 {
-            // text-align: center;
             font-weight: 500;
         }
         & > p {
@@ -101,16 +98,13 @@ $colorBtn: rgb(236, 116, 116);
         }
         & > a {
             text-decoration: none;
-            // margin-top: 4rem;
         }
         &--btn {
             position: relative;
             top: 1rem;
-            // margin-top: 5rem;
             text-decoration: none;
 
             margin: 0 auto;
-            // margin-bottom: 3rem;
             background-color: $colorBtn;
 
             height: 3rem;
@@ -144,15 +138,11 @@ $colorBtn: rgb(236, 116, 116);
     }
     &__box {
         text-align: center;
-        // width: 100%;
-        // display: grid;
-        // grid-template-columns: auto auto auto;
-        // grid-row-gap: 2rem;
         display: flex;
         flex-wrap: wrap;
         padding: 0 3rem;
     }
 }
 .invitation {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }

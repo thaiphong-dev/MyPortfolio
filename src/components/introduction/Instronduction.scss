@@ -1,5 +1,5 @@
-$colorText: rgb(104, 6, 6);
-$colorBtn: rgb(236, 116, 116);
+@import "../../colors.scss";
+
 .Introduction {
     position: relative;
     color: $colorText;
